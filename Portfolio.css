@@ -4,17 +4,39 @@
     box-sizing: border-box;
     color: whitesmoke;
 }
-section:nth-last-of-type(odd), header, footer {
+section:nth-last-of-type(odd), header, footer , body{
     background-color: rgb(53, 53, 53);
 }
 section:nth-last-of-type(even) {
     background-color: rgb(48, 46, 53);
 }
 .wrapper{
-    width: 1080px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 16px;
 }
 .info{
     
+}
+
+@media (max-width: 1080px){
+    .page-title{
+        width: 100%;
+        border-radius: 0px;
+    }
+    main{
+        margin: 5%;
+        width: 100%;
+    }
+    img{
+        scale: auto;
+    }
+    header{
+        width: 100%;
+    }
+}
+@media (max-width: 450px){
+    .page-title{
+        width: 100%;
+    }
 }
