@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #ball {
+                width: 50px;
+                height: 50px;
+                background-color: rgb(25, 0, 255);
+                border-radius: 50%;
+                position: absolute;
+            }
+        </style>
+    </head>
+<body>
+    <div id="ball"></div>
+
+    <script>
+        const ball = document.getElementById('ball');
+
+        ball.addEventListener('mouseover', () => {
+            const newX = Math.random() * (window.innerWidth - ball.offsetWidth);
+            const newY = Math.random() * (window.innerHeight - ball.offsetHeight);
+            
+            ball.style.left = newX + 'px';
+            ball.style.top = newY + 'px';
+        });
+        ball.addEventListener('mouse', () => {
+            alert("test");
+        });
+    </script>
+</body>
+</html>
