@@ -7,9 +7,15 @@
 section:nth-last-of-type(odd), footer , body{
     background-color: rgb(53, 53, 53);
 }
-section:nth-last-of-type(even), header{
+section:nth-last-of-type(even), header, ImageBackGround{
     background-color: rgb(48, 46, 53);
 }
+.avatar{
+    background: rgb(48, 46, 53);
+    display: flex;
+    justify-content: center;
+}
+
 .wrapper{
     max-width: 1080px;
     margin: 0 auto;
